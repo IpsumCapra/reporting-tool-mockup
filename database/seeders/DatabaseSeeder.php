@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
+        Illuminate\Support\Facades\DB::table('users')->insert([
             'firstname' => "Admin",
             'lastname' => "Admin",
             'gender' => User::GENDER_MALE,
