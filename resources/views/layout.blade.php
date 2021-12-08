@@ -51,7 +51,6 @@
                         <div class="navbar-item">
                             <div class="buttons">
                                 <a class="button is-link" href="{{ route('auth.login') }}">@lang('layout.header.login')</a>
-                                <a class="button" href="{{ route('auth.register') }}">@lang('layout.header.register')</a>
                             </div>
                         </div>
                     </div>
