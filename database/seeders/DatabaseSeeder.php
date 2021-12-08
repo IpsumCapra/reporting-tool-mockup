@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
             'postcode' => "1234AB",
             'city' => "Plek",
             'province' => User::PROVINCES[0],
-            'password' => Hash::make("admin"),
+            'password' => \Hash::make("admin"),
             'role' => User::ROLE_ADMIN,
         ]);
     }
