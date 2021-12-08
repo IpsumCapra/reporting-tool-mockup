@@ -5,4 +5,5 @@ return [
     'title' => 'Admin',
     'breadcrumb' => 'Admin',
     'header' => 'Administration panel',
+    'users' => 'Users'
 ];
