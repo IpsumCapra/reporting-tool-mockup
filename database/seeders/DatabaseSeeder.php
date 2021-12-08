@@ -14,9 +14,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Faker\Factory::create();
-
-
         DB::table('users')->insert([
             'firstname' => "Admin",
             'lastname' => "Admin",
