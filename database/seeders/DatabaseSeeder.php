@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
             'firstname' => "Admin",
             'lastname' => "Admin",
             'gender' => User::GENDER_MALE,
-            'birthday' => $faker->date(),
+            'birthday' => "10-10-2000",
             'email' => "admin@a.a",
             'address' => "Plekstad 123",
             'postcode' => "1234AB",
