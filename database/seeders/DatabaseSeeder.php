@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
             'firstname' => "Admin",
             'lastname' => "Admin",
             'gender' => User::GENDER_MALE,
-            'birthday' => "10-10-2000",
+            'birthday' => "1000-01-01 00:00:00",
             'email' => "admin@a.a",
             'address' => "Plekstad 123",
             'postcode' => "1234AB",
