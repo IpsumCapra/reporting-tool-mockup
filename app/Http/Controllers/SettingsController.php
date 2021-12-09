@@ -29,11 +29,11 @@ class SettingsController extends Controller
             'address' => 'required|min:2',
             'postcode' => 'required|min:2',
             'city' => 'required|min:2',
-            'country' => 'required|min:2',
+            'province' => 'required|min:2|max:255'
         ]);
 
         // Update user details
-        Auth::user()->fresh()->update([
+        Auth::user()->update([
             'firstname' => $fields['firstname'],
             'insertion' => $fields['insertion'],
             'lastname' => $fields['lastname'],
@@ -44,7 +44,7 @@ class SettingsController extends Controller
             'address' => $fields['address'],
             'postcode' => $fields['postcode'],
             'city' => $fields['city'],
-            'country' => $fields['country']
+            'province' => $fields['province']
         ]);
 
         // Go back with message
