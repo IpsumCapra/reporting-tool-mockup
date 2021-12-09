@@ -33,7 +33,7 @@ class SettingsController extends Controller
         ]);
 
         // Update user details
-        Auth::user()->update([
+        Auth::user()->fresh()->update([
             'firstname' => $fields['firstname'],
             'insertion' => $fields['insertion'],
             'lastname' => $fields['lastname'],
